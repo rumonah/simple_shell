@@ -1,2 +1,1 @@
-# simple_shell
-Creating my own shell
+simple_shell
