@@ -1,13 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "shell.h"
-
-ssize_t getline(char **lineptr, size_t *n, FILE *stream)
+/**
+ * main - getline
+ *
+ * Return: 0
+ */
+int main(void)
 {
-	ssize_t n = 30;
-	char *lineptr = malloc(sizeof(char) *n);
+	ssize_t n = 10;
+	char *lineptr = malloc(sizeof(char) * n);
 
-	printf("Enter name ");
+	printf("Enter name");
 	getline(&lineptr, &n, stdin);
 
 	printf("Name is %sBuffer size is%ld\n", lineptr, n);
@@ -15,4 +19,18 @@ ssize_t getline(char **lineptr, size_t *n, FILE *stream)
 	free(lineptr);
 
 	return (0);
+
+	{
+		ssize_t n = 10;
+		char *lineptr = NULL;
+
+		printf("Enter name");
+		getline(&lineptr, &n, stdin);
+
+		printf("Name is %sBuffer size is%ld\n", lineptr, n);
+
+		free(lineptr);
+
+		return (0);
+	}
 }
