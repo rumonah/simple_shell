@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "shell.h"
 
 /**
  * main - PID
@@ -8,15 +9,14 @@
  */
 int main(void)
 {
-        int r = 5;
-        int j = 7;
-        int sum = r + j;
-        pid_t pid;
+	int r = 5;
+	int j = 7;
+	int sum = r + j;
+	pid_t pid;
 
-        printf("sum is %d\n", sum);
+	printf("sum is %d\n", sum);
+	pid = getpid();
+	printf("my pid is %d\n", pid);
 
-        pid = getpid();
-        printf("my pid is %s\n", pid);
-
-        return (0);
+	return (0);
 }
