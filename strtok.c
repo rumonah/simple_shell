@@ -1,25 +1,30 @@
 #include <string.h>
 #include "shell.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - extract tokens from strings
- *
+ * strtok - extract tokens from strings
+ * @str: string
+ * @delim: delimiter
  * Return: 0
  */
 int main(void)
 {
-	char str[] = "The festive Season";
-	char *delim = " ";
+	char *src = "The festive Season";
+	char *str = malloc(sizeof(char) * strlen(src));
+	const char *delim = " ";
 	char *token;
 
+	strcpy(str, src);
+
 	token = strtok(str, delim);
-	printf("%s ", delim);
 
-	token = strtok(NULL, delim);
-	printf("%s ", token);
-
-	while 
+	while(token)
+	{
+		printf("%s\n", token);
+		token = strtok(NULL, delim);
+	}
 
 	return (0);
 }
