@@ -11,7 +11,7 @@
  */
 int main(void)
 {
-	char *src = "The festive Season";
+	char *src = "The Festive Season";
 	char *str = malloc(sizeof(char) * strlen(src));
 	const char *delim = " ";
 	char *token;
