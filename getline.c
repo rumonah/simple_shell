@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	ssize_t n = 10;
+	size_t n = 26;
 	char *buff = malloc(sizeof(char) * n);
 
 	printf("Enter name");

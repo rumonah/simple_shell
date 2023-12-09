@@ -1,7 +1,7 @@
 #include "shell.h"
 #include <stdio.h>
 #include <unistd.h>
-
+#include <stdbool.h>
 /**
  * main - shell source file
  *
@@ -9,13 +9,13 @@
  */
 int main(void)
 {
-	char process[128];
+	char command[255];
 
 	while (1)
 	{
-		display_prompt();
-		user_input(process, sizeof(process));
-		execute_process(process);
+		prompt();
+		user_input(command, sizeof(command));
+		execute_command;
 	}
 
 	return (0);

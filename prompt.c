@@ -5,7 +5,7 @@
  *
  * Return: 0.
  */
-void display_prompt(void)
+void prompt(void)
 {
-	print("Simple_shell$$ ");
+	printf("Simple_shell$$ ");
 }
