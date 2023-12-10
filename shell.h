@@ -14,6 +14,5 @@ int main(void);
 void prompt(void);
 void print(const char *command);
 char *getenv(const char *env);
-int main(int ac, char **av, char **env);
 
 #endif /* SHELL_H*/
