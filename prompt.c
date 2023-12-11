@@ -4,7 +4,11 @@
 #include <fcntl.h>
 
 /**
- * main - print
+ * main - write a program that prints "$ "
+ * wait for the user to enter a command
+ * prints it on the next line.
+ * Return: 0
+ */
 int main(void)
 {
 	char *command = NULL;
@@ -26,7 +30,7 @@ int main(void)
 		printf("Begin here %s", command);
 	}
 
-	printf("Coding has stoped");
+	printf("Coding has stopped");
 	free(command);
 	return (0);
 }
