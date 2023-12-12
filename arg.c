@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	int r = 0;
 
-	for (r = 0 ; r < argc; r++);
+	while (r < argc)
 	{
 		printf("The %d argument is: %s\n", r, argv[r]);
 		r++;

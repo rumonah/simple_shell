@@ -2,18 +2,17 @@
 
 /**
  * main - prints the environment
- * @ac: argument count
- * @av: argument vector
+ *
  * @env: environment
  * Return: 0.
  */
-int main(int ac, char **av, char **env)
+char *env(const char *env)
 {
 	unsigned int go = 0;
 
-	while (env[go] != NULL)
+	while (env[go])
 	{
-		printf("env[%d] = %s\n", go, env[go]);
+		printf("env[%d] = %d\n", go, env[go]);
 		go++;
 	}
 
