@@ -20,7 +20,7 @@ int main(void)
 
 	token = strtok(str, delim);
 
-	while(token)
+	while (token)
 	{
 		printf("%s\n", token);
 		token = strtok(NULL, delim);

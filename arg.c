@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "shell.h"
+#include <stdlib.h>
 
 /**
  * main - print the arguments
@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	int r = 0;
 
-	for (r ; r < argc; r++);
+	for (r = 0 ; r < argc; r++);
 	{
 		printf("The %d argument is: %s\n", r, argv[r]);
 		r++;

@@ -11,7 +11,7 @@
 #include <stdlib.h>
 
 int main(void);
-void prompt(void);
+void print_tokens(char str[], char *delim);
 void print(const char *command);
 char *getenv(const char *env);
 

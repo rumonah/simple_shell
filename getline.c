@@ -14,7 +14,7 @@ int main(void)
 	printf("Enter name");
 	getline(&buff, &n, stdin);
 
-	printf("Name is %sBuffer size is%ld\n", buff, n);
+	printf("Name is %s Buffer size is %ld\n", buff, n);
 
 	free(buff);
 

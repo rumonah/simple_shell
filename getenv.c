@@ -7,19 +7,32 @@
  * @env: string that contains the name of the environment variable
  * Return: NULL if no match, pointer to the value of variable
  */
+
+extern char **environ;
 char *getenv(const char *env)
 {
-	char **environ;
-	size_t r = strlen(env);
+	int b = 0;
 
-	if (!env)
-		return (NULL);
-	while (*environ)
+	while (env[b])
 	{
-		if (strncmp(*environ, env, r) == 0)
-			environ++;
-		return (*environ);
+		printf("env[%d] = %d\n", b, env[b]);
+		b++;
 	}
 
-	return (NULL);
+	return (0);
+}
+
+extern char **environ;
+
+int main(void)
+{
+	int e = 0;
+
+	while (environ[e])
+	{
+		printf("environ[%d] = %s\n", e, environ[e]);
+		e++;
+	}
+
+	return (0);
 }

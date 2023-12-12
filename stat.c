@@ -27,11 +27,11 @@ int main(int ac, char **av)
 		printf("%s:", av[small]);
 		if (stat(av[small], &r) == 0)
 		{
-			printf(" FOUND\n");
+			printf(" Awesome Coding\n");
 		}
 		else
 		{
-			printf(" NOT FOUND\n");
+			printf(" Patience pays\n");
 		}
 
 		small++;
