@@ -13,7 +13,7 @@ int main(int ac, char **av, char **env)
 
 	while (env[go] != NULL)
 	{
-		printf("%s\n", env[go]);
+		printf("env[%d] = %s\n", go, env[go]);
 		go++;
 	}
 
