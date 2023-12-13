@@ -9,7 +9,7 @@
  * @argv: argument vector
  * Return: 0.
  */
-int main(void)
+int main(int argc, char *argv[])
 {
 	char *cmd = NULL, *cmd_cpy = NULL, *token = NULL;
 	char *delim = " \n";

@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the environment
- *
+ * env - prints the environment
  * @env: environment
  * Return: 0.
  */

@@ -1,14 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "shell.h"
+
 /**
- * main - getline
- *
+ * getline - delimited string input
+ * @n: size of the buffer
+ * @lineptr: addree of buffer created
+ * @stream: stdin
  * Return: 0
  */
-int main(void)
+ssize_t getline(char **lineptr, size_t *n, FILE *stream)
 {
-	size_t n = 26;
+	size_t *n = 26;
 	char *buff = malloc(sizeof(char) * n);
 
 	printf("Enter name");

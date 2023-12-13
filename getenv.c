@@ -8,7 +8,6 @@
  * Return: NULL if no match, pointer to the value of variable
  */
 
-extern char **environ;
 char *getenv(const char *env)
 {
 	int b = 0;
@@ -22,7 +21,10 @@ char *getenv(const char *env)
 	return (0);
 }
 
-extern char **environ;
+/**
+ * main - prints the environment
+ * Return: 0
+ */
 
 int main(void)
 {

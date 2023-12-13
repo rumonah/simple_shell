@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <fcntl.h>
+#include <string.h>
 #include <unistd.h>
 #include "shell.h"
 #include <sys/wait.h>
 #include <sys/types.h>
 
 /**
- * main - execute the program
+ * execve - execute the program
  *
- * Return - 0.
+ * @argv: argument vector
+ * Return:0.
  */
-
-int main(void)
+int execve(const char *pathname, char *const argv[])
 {
 	pid_t pid;
 
