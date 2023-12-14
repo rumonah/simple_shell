@@ -10,7 +10,7 @@
  */
 ssize_t line(char **lineptr, size_t *n)
 {
-	size_t r;;
+	size_t r;
 	char *buff = malloc(sizeof(char));
 
 	printf("Enter name ");
