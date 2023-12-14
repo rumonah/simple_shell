@@ -19,5 +19,5 @@ int main(void)
 	ppid = getppid();
 	printf("my ppid is %d\n", ppid);
 
-        return (0);
+	return (0);
 }

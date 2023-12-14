@@ -5,6 +5,7 @@
 #include "shell.h"
 #include <sys/wait.h>
 #include <sys/types.h>
+#include <stdlib.h>
 
 /**
  * execve - execute the program
@@ -12,11 +13,11 @@
  * @argv: argument vector
  * Return:0.
  */
-int execve(const char *pathname, char *const argv[])
+int exece(char *argv[])
 {
 	pid_t pid;
 
-	char *argv[] = {"/bin/ls", "-l", NULL};
+	char * argv[] = {"/bin/ls", "-l", NULL};
 
 	pid = fork();
 

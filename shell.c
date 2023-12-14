@@ -1,8 +1,14 @@
 #include "shell.h"
 #include <unistd.h>
 
-void interactive();
-void non_interactive();
+void interactive(void);
+void non_interactive(void);
+
+/**
+ * main - prints the shell program
+ *
+ * Return: 0
+ */
 
 int main(void)
 {
@@ -22,10 +28,15 @@ int main(void)
 	return (0);
 }
 
-void interactive()
+/**
+ * interactive - shell works in a interactive mode
+ */
+void interactive(void)
 {
 	char *input, *token = NULL;
 	size_t r = 0;
+	char delim[] = {'\n', '\t', ' '};
+	char **array = NULL;
 
 	printf("$ ");
 
@@ -39,9 +50,19 @@ void interactive()
 
 	token = strtok(input, "\n");
 
+	array = malloc((sizeof(char) * strlen(token) = 1);
+
+	printf("size of array = %lu\n", sizeof(array));
+	printf("size of token = %lu\n", sizeof(token));
+
 	printf("The token %s\n", token);
 }
-void non_interactive()
+
+/**
+ * non_interactive - shell works in a non_interactive mode
+ */
+void non_interactive(void)
 {
-	printf("Non_intaractive mode\n");
+	printf("This a Non_interactive mode\n");
 }
+

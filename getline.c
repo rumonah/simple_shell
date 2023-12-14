@@ -5,10 +5,11 @@
 /**
  * line - delimited string input
  * @n: size of the buffer
- * @lineptr: addree of buffer created
+ * @buffer:  buffer stores the variable that is
+ * supposed to be taken in (input) or output.
  * Return: 0
  */
-ssize_t line(char **lineptr, size_t *n)
+ssize_t line(char **buffer, size_t *n)
 {
 	size_t r;
 	char *buff = malloc(sizeof(char));
