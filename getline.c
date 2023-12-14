@@ -3,21 +3,20 @@
 #include "shell.h"
 
 /**
- * getline - delimited string input
+ * line - delimited string input
  * @n: size of the buffer
  * @lineptr: addree of buffer created
- * @stream: stdin
  * Return: 0
  */
-ssize_t getline(char **lineptr, size_t *n, FILE *stream)
+ssize_t line(char **lineptr, size_t *n)
 {
-	size_t *n = 26;
-	char *buff = malloc(sizeof(char) * n);
+	size_t r;;
+	char *buff = malloc(sizeof(char));
 
-	printf("Enter name");
-	getline(&buff, &n, stdin);
+	printf("Enter name ");
+	getline(&buff, &r, stdin);
 
-	printf("Name is %s Buffer size is %ld\n", buff, n);
+	printf("Name is %sBuffer size is %ln\n", buff, n);
 
 	free(buff);
 

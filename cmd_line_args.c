@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	char *cmd = NULL, *cmd_cpy = NULL, *token = NULL;
 	char *delim = " \n";
 	size_t r = 0;
-	int argc = 0, t = 0;
+	char argc = 0, t = 0;
 	char **argv = NULL;
 
 	printf("$ ");

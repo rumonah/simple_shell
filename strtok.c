@@ -9,7 +9,7 @@
  * @delim: delimiter
  * Return: 0
  */
-int main(void)
+char *strtok(char *str, const char *delim)
 {
 	char *src = "The Festive Season";
 	char *str = malloc(sizeof(char) * strlen(src));

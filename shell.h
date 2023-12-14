@@ -11,6 +11,8 @@
 #include <stdlib.h>
 
 int main(void);
+ssize_t line(char **lineptr, size_t *n);
+char *strtok(char *str, const char *delim);
 char *env(const char *env);
 int main(int argc, char* argv[]);
 void print_tokens(char str[], char *delim);
