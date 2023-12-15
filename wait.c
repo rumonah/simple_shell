@@ -3,29 +3,29 @@
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 /**
- * main - wait for process to change state
- *
- * Return - 0.
+ * wait - wait for process to change state
+ * Return: 0.
  */
 
-int main(void)
+pid_t wait(void)
 {
-	pid_t pid;
+	pid_t p;
 
 	/* creating the child process */
-	pid = fork();
+	p = fork();
 
 	/* if the fork fails */
-	if (pid == -1)
+	if (p == -1)
 	{
 		perror("Not successful\n");
 		return (1);
 	}
 
 	/* child process */
-	if (pid == 0)
+	if (p == 0)
 	{
 		printf("The child process\n");
 	}

@@ -4,11 +4,11 @@
 #include <sys/types.h>
 
 /**
- * main - PID
- *
+ * getpid - Process ID
+ * 
  * Return: 0
  */
-int main(void)
+pid_t getpid(void)
 {
 	int r = 5;
 	int j = 7;

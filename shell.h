@@ -21,5 +21,8 @@ char *getenv(const char *env);
 extern char **environ;
 void non_interactive(void);
 void interactive(void);
+pid_t wait(int *stat_loc);
+pid_t getppid(void);
+pid_t getpid(void);
 
 #endif /* SHELL_H*/

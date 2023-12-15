@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 /**
- * execve - execute the program
+ * exece - execute the program
  *
  * @argv: argument vector
  * Return:0.
@@ -17,7 +17,7 @@ int exece(char *argv[])
 {
 	pid_t pid;
 
-	char * argv[] = {"/bin/ls", "-l", NULL};
+	char *r = {"/bin/ls", "-l", NULL};
 
 	pid = fork();
 

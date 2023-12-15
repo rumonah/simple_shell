@@ -50,7 +50,7 @@ void interactive(void)
 
 	token = strtok(input, "\n");
 
-	array = malloc((sizeof(char) * strlen(token) = 1);
+	array = malloc((sizeof(char) * strlen(token) == 1));
 
 	printf("size of array = %lu\n", sizeof(array));
 	printf("size of token = %lu\n", sizeof(token));

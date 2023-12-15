@@ -4,11 +4,11 @@
 #include <sys/types.h>
 
 /**
- * main - PPID
+ * getppid - PPID
  *
  * Return: 0
  */
-int main(void)
+pid_t getppid(void)
 {
 	int r = 25;
 	int j = 16;
