@@ -9,7 +9,7 @@
  * supposed to be taken in (input) or output.
  * Return: 0
  */
-int main()
+int main(void)
 {
 	size_t n;
 	char *buff = malloc(sizeof(char));

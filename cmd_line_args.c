@@ -5,12 +5,12 @@
 #include <unistd.h>
 
 /**
- * arg - command lines with arguments
+ * main - command lines with arguments
  * @argc: argument count
  * @argv: argument vector
  * Return: 0.
  */
-int arg()
+int main(void)
 {
 	char *cmd = NULL, *cmd_cpy = NULL, *token = NULL;
 	char *delim = " \n";

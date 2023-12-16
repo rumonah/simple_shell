@@ -3,7 +3,7 @@
 #include "shell.h"
 
 /**
- * main - fork
+ * fork - create a child process
  *
  * Return: 0
  */

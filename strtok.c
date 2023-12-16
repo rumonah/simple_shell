@@ -9,7 +9,7 @@
  *
  * Return: 0
  */
-int main()
+int main(void)
 {
 	char section[] = "The Festive Season";
 	char *strt = strtok(section, " ");
