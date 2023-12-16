@@ -20,20 +20,3 @@ char *getenv(const char *env)
 
 	return (0);
 }
-
-/**
- * main - prints the environment
- * Return: 0
- */
-int main(void)
-{
-	int e = 0;
-
-	while (environ[e])
-	{
-		printf("environ[%d] = %s\n", e, environ[e]);
-		e++;
-	}
-
-	return (0);
-}

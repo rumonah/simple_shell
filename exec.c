@@ -9,8 +9,6 @@
 
 /**
  * main - execute the program
- *
- * @argv: argument vector
  * Return:0.
  */
 int main(void)
