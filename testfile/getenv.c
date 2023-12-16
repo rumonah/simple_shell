@@ -25,6 +25,7 @@ char *getenv(const char *env)
  * main - prints the environment
  * Return: 0
  */
+
 int main(void)
 {
 	int e = 0;

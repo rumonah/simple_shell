@@ -6,11 +6,11 @@
 #include <stdint.h>
 
 /**
- * wait - wait for process to change state
+ * main - wait for process to change state
  * Return: 0.
  */
 
-pid_t wait(void)
+int main(void)
 {
 	pid_t p;
 

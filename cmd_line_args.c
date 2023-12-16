@@ -3,18 +3,19 @@
 #include <stdlib.h>
 #include "shell.h"
 #include <unistd.h>
+
 /**
- * main - command lines with arguments
+ * arg - command lines with arguments
  * @argc: argument count
  * @argv: argument vector
  * Return: 0.
  */
-int main(int argc, char *argv[])
+int arg()
 {
 	char *cmd = NULL, *cmd_cpy = NULL, *token = NULL;
 	char *delim = " \n";
 	size_t r = 0;
-	char argc = 0, t = 0;
+	int argc = 0, t = 0;
 	char **argv = NULL;
 
 	printf("$ ");

@@ -1,5 +1,7 @@
-#include "shell.h"
 #include <unistd.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 void interactive(void);
 void non_interactive(void);
@@ -35,7 +37,6 @@ void interactive(void)
 {
 	char *input, *token = NULL;
 	size_t r = 0;
-	char delim[] = {'\n', '\t', ' '};
 	char **array = NULL;
 
 	printf("$ ");

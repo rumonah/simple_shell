@@ -8,16 +8,16 @@
 #include <stdlib.h>
 
 /**
- * exece - execute the program
+ * main - execute the program
  *
  * @argv: argument vector
  * Return:0.
  */
-int exece(char *argv[])
+int main(void)
 {
 	pid_t pid;
 
-	char *r = {"/bin/ls", "-l", NULL};
+	char *argv[] = {"/bin/ls", "-l", NULL};
 
 	pid = fork();
 

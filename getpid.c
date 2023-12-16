@@ -5,7 +5,7 @@
 
 /**
  * getpid - Process ID
- * 
+ *
  * Return: 0
  */
 pid_t getpid(void)

@@ -7,7 +7,7 @@
  *
  * Return: 0
  */
-int main(void)
+pid_t fork(void)
 {
 	pid_t pid;
 	pid_t ppid;
