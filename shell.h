@@ -9,17 +9,4 @@
 #include <string.h>
 #include <stdlib.h>
 
-char *strtok(char *str, const char *delim);
-char *env(const char *env);
-int argum(int argc, char **argv);
-void print_tokens(char str[], char *delim);
-void print(const char *command);
-char *getenv(const char *env);
-extern char **environ;
-void non_interactive(void);
-void interactive(void);
-pid_t wait(int *stat_loc);
-pid_t getppid(void);
-pid_t getpid(void);
-
 #endif /* SHELL_H*/
